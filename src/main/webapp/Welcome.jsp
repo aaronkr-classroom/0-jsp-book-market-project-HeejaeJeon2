@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ contentType="text/html; charset=utf-8" %>
 <%@ page import = "java.util.Date" %>
 <!DOCTYPE html>
 <html>
@@ -14,7 +13,7 @@
 	<%@ include file= "menu.jsp" %>
 	
 	<%!
-	String greeting = "µµ¼­ ¼îÇÎ¸ô¿¡ ¿À½Å °ÍÀ» È¯¿µÇÕ´Ï´Ù!";
+	String greeting = "ë„ì„œ ì‡¼í•‘ëª°ì— ì˜¤ì‹  ê²ƒì„ í™˜ì˜í•©ë‹ˆë‹¤!";
 	String tagline = "Welcome to Web Market";
 	%>
 	
@@ -44,7 +43,7 @@
 				}
 				
 				String CT = hour + ":" + min + ":" + sec + " " + am_pm;
-				out.println("ÇöÀç Á¢¼Ó ½Ã°¢: " + CT + "\n");
+				out.println("í˜„ìž¬ ì ‘ì† ì‹œê°: " + CT + "\n");
 			%>
 			</div>
 		</div>
