@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page import = "java.util.ArrayList" %>
 <%@ page import = "dto.Book" %>
+<%@ page import = "dao.BookRepository" %>
 <sjp:useBean id="BookDAO" class="dao.BookRepository" scope="session" />
 <html>
 <head>
@@ -19,7 +20,8 @@ bootstrqp.min.css" rel = "stylesheet">
 	</div>
 </div>
 <%
-	ArrayList<Book> listOfBooks = bookDAO.getAllBooks();
+	BookRepository dao=BookRepository.getInstance();
+	ArrayList<Book> listOfBooks=dao.getAllBooks();
 %>
 
 <div class = "row align-items-md-stretch"text-center">
