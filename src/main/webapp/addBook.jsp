@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 <title>도서 등록</title>
 </head>
 <body>
@@ -18,6 +19,8 @@
 </div>
 
 <div class = "row align-items-md-stretch">
+	<form name="newwBook" action="./processAddBook.jsp" class="form-horizontal"
+	 method="post" entype="multipart/form-data"> </form>
 	<form name = "newBook" action = " ./processAddBook.jsp" method = "post">
 		<div class = "mb-3 row">
 			<lable class = col-sm-2">도서코드</lable>
@@ -82,6 +85,12 @@
 				<input type = "radio" name = "condition" value = "Ebook"> E-Book
 			</div>
 		</div>
+		<div class="mb-3 row">
+			<label class="col-sm-2">이미지</label>
+			<div class=col-sm-5>
+			<input type="file" name="BookImage" class="form-contorl">
+			</div>
+			</div>
 		<div class = "mb-3 row">
 			<div class = "col-sm-offset-2 col-sm-10">
 				<input type = "submit" class = "btn btn-primary" value = "등록">
